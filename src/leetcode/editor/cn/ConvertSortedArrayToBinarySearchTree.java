@@ -20,6 +20,9 @@ package leetcode.editor.cn;
 public class  ConvertSortedArrayToBinarySearchTree{
     public static void main(String[] args){
         Solution solution = new ConvertSortedArrayToBinarySearchTree().new Solution();
+        int[] nums = {1,2,3,4,5,6,7,8,9};
+        TreeNode node = solution.sortedArrayToBST(nums);
+        System.out.println(node);
     }
     
 //leetcode submit region begin(Prohibit modification and deletion)
@@ -32,9 +35,27 @@ public class  ConvertSortedArrayToBinarySearchTree{
  *     TreeNode(int x) { val = x; }
  * }
  */
+public static class TreeNode {
+      int val;
+      TreeNode left;
+      TreeNode right;
+     TreeNode(int x) { val = x; }
+}
+
 class Solution {
     public TreeNode sortedArrayToBST(int[] nums) {
+        int r=nums.length-1;
+        int l=0;
+        return BST(nums,l,r);
+    }
 
+    private TreeNode BST(int[] nums,int l,int r){
+        if(l>r)return null;
+        int p = l+(r-l)/2;
+        TreeNode node = new TreeNode(nums[p]);
+        node.left = BST(nums,l,p-1);
+        node.right = BST(nums,p+1,r);
+        return node;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
