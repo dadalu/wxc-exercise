@@ -1,1 +1,19 @@
 本项目是leetcode刷题
+C:\Users\Administrator\IdeaProjects\leetcode\src
+
+$!velocityTool.camelCaseName(${question.titleSlug})
+
+package leetcode.editor.cn;
+//${question.title}
+//${question.titleSlug}	
+//${question.frontendQuestionId}
+${question.content}
+//Java：${question.title}
+public class $!velocityTool.camelCaseName(${question.titleSlug}){
+    public static void main(String[] args) {
+        Solution solution = new $!velocityTool.camelCaseName(${question.titleSlug})().new Solution();
+        // TO TEST
+    }
+    ${question.code}
+}
+
