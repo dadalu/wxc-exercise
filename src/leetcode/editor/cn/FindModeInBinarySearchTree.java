@@ -55,12 +55,12 @@ public class FindModeInBinarySearchTree{
  *     TreeNode(int x) { val = x; }
  * }
  */
-/*public static class TreeNode {
+public static class TreeNode {
     int val;
     TreeNode left;
     TreeNode right;
     TreeNode(int x) { val = x; }
- }*/
+ }
 class Solution {
     int val,count,max;
     List<Integer> list = new ArrayList<>();
