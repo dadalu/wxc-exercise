@@ -60,15 +60,100 @@
 // Related Topics 数学 字符串
 
 package leetcode.editor.cn;
+
+import java.math.BigDecimal;
+
 public class  StringToIntegerAtoi{
     public static void main(String[] args){
         Solution solution = new StringToIntegerAtoi().new Solution();
+        //System.out.println(solution.myAtoi("4193 with words"));
+        System.out.println(solution.myAtoi("-42"));
     }
     
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int myAtoi(String str) {
-    return  0;
+        char[] c = str.toCharArray();
+        if (c.length == 0) {
+            return 0;
+        }
+        int index1 = -1;
+        int index2 = -1;
+        int index3 = -1;
+        int idx = 0;
+        while (idx < c.length - 1 && c[idx] < 48 || c[idx] > 57) {
+            if (c[idx] != '+' && c[idx] != '-' && c[idx] != ' ') {
+                return 0;
+            } else {
+                idx++;
+            }
+        }
+
+        for (int j = 0; j < c.length; j++) {
+            if (c[j] >= 48 && c[j] <= 57) {
+                index2 = j;
+                break;
+            }
+        }
+
+        for (int i = 0; i < index2; i++) {
+            if (c[i] == '+' || c[i] == '-') {
+                if (c[i + 1] >= 48 && c[i + 1] <= 57) {
+                    index1 = i;
+                    break;
+                } else {
+                    return 0;
+                }
+            }
+        }
+
+        if (index2 != -1) {
+            index3 = index2;
+        }
+
+        while (index3 != -1 && index3 < c.length && c[index3] >= 48 && c[index3] <= 57) {
+            if (index3 == c.length - 1) {
+                break;
+            }
+            if (c[index3 + 1] < 48 || c[index3 + 1] > 57) {
+                break;
+            }
+            index3++;
+        }
+        String ans = "";
+        if (index2 != -1) {
+            if (index1 != -1) {
+                if (index2 == index3) {
+                    ans = String.valueOf(c[index1]) + String.valueOf(c[index2]);
+                } else {
+                    for (int i = index1; i <= index3; i++) {
+                        ans += c[i];
+                    }
+                }
+            } else {
+                if (index2 == index3) {
+                    ans = String.valueOf(c[index2]);
+                } else {
+                    for (int i = index2; i <= index3; i++) {
+                        ans += c[i];
+                    }
+                }
+            }
+
+        } else {
+            ans = "0";
+        }
+        int a = 0;
+        try {
+            a = Integer.valueOf(ans);
+        } catch (Exception e) {
+            if (ans.subSequence(0, 1).equals("-")) {
+                a = -2147483648;
+            } else {
+                a = 2147483647;
+            }
+        }
+        return a;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
