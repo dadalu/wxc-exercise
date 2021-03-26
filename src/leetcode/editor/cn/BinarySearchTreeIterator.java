@@ -74,11 +74,21 @@ public class TreeNode {
 class BSTIterator {
     private TreeNode root;
     private List<TreeNode> iterator = new ArrayList<>();
+    private List<TreeNode> list = new ArrayList<>();
     private int curIndex = -1;
     public BSTIterator(TreeNode root) {
         this.root = root;
-        if (root != null) {
+        /*if (root != null) {
             middleIterator(root);
+        }*/
+        while (root != null||!list.isEmpty()) {
+            while (root != null) {
+                list.add(root);
+                root = root.left;
+            }
+            root = list.remove(list.size() - 1);
+            iterator.add(root);
+            root = root.right;
         }
     }
 
