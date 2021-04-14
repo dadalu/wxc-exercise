@@ -55,7 +55,6 @@ package leetcode.editor.cn;
 // Related Topics 贪心算法 
 // 👍 135 👎 0
 
-import javafx.collections.transformation.SortedList;
 
 import java.util.*;
 

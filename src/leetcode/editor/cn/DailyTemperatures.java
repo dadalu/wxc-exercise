@@ -12,7 +12,6 @@ package leetcode.editor.cn;
 // Related Topics 栈 哈希表 
 // 👍 701 👎 0
 
-import sun.misc.Queue;
 
 import java.util.ArrayDeque;
 

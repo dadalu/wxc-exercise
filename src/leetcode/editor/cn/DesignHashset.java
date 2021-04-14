@@ -56,7 +56,7 @@ public class DesignHashset{
     }
 
 //leetcode submit region begin(Prohibit modification and deletion)
-class MyHashSet {
+static class MyHashSet {
     private List<Integer>[] entry;
     private double factor = 0.75;
     private int length;

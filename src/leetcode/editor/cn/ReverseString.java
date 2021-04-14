@@ -23,7 +23,6 @@ package leetcode.editor.cn;
 // Related Topics 双指针 字符串 
 // 👍 266 👎 0
 
-import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
 
 //Java：反转字符串
 public class ReverseString{

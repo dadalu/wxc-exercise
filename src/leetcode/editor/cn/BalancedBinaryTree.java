@@ -38,7 +38,6 @@
 
 package leetcode.editor.cn;
 
-import sun.reflect.generics.tree.Tree;
 
 public class  BalancedBinaryTree{
     public static void main(String[] args){
