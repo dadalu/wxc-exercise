@@ -32,9 +32,7 @@ package leetcode.editor.cn;
 // Related Topics 栈 树 设计 
 // 👍 344 👎 0
 
-import com.sun.org.apache.xpath.internal.objects.XNodeSet;
 
-import javax.xml.soap.Node;
 import java.util.ArrayList;
 import java.util.List;
 
