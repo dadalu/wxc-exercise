@@ -46,7 +46,7 @@ public class FlattenNestedListIterator{
  *     public List<NestedInteger> getList();
  * }
  */
-/*public interface NestedInteger {
+public interface NestedInteger {
     // @return true if this NestedInteger holds a single integer, rather than a nested list.
     public boolean isInteger();
     // @return the single integer that this NestedInteger holds, if it holds a single integer
@@ -55,7 +55,8 @@ public class FlattenNestedListIterator{
     // @return the nested list that this NestedInteger holds, if it holds a nested list
     // Return empty list if this NestedInteger holds a single integer
     public List<NestedInteger> getList();
-}*/
+}
+//[[[3],1],2]
 public class NestedIterator implements Iterator<Integer> {
     List<NestedInteger> nestedList;
     List<NestedInteger> stack = new ArrayList<>();
@@ -73,9 +74,8 @@ public class NestedIterator implements Iterator<Integer> {
                     nestedInteger = stack.remove(0);
                     if (!nestedInteger.isInteger()) {
                         List<NestedInteger> list = nestedInteger.getList();
-                        for (NestedInteger ni : list
-                        ) {
-                            stack.add(ni);
+                        for (int i = list.size()-1; i >=0 ; i--) {
+                            stack.add(0, list.get(i));
                         }
                     }else {
                         result.add(nestedInteger.getInteger());
