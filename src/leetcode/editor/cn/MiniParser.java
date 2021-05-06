@@ -76,7 +76,7 @@ public class MiniParser{
  */
 
 class Solution {
-    char[] chars;
+    /*char[] chars;
     int cur = 0;
     public NestedInteger deserialize(String s) {
         chars = s.toCharArray();
@@ -107,7 +107,7 @@ class Solution {
             }
         }
         return null;
-    }
+    }*/
 }
 //leetcode submit region end(Prohibit modification and deletion)
 

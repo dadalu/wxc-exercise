@@ -41,18 +41,6 @@ import java.util.List;
 
 public class DesignHashset{
     public static void main(String[] args) {
-        MyHashSet myHashSet = new MyHashSet();
-        for (int i = 0; i < 100; i++) {
-            myHashSet.add(i);
-        }
-        myHashSet.add(1);
-        myHashSet.add(2);
-        myHashSet.contains(1);
-        myHashSet.contains(3);
-        myHashSet.add(2);
-        myHashSet.contains(2);
-        myHashSet.remove(2);
-        myHashSet.contains(2);
     }
 
 //leetcode submit region begin(Prohibit modification and deletion)
