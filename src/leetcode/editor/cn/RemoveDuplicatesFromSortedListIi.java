@@ -49,13 +49,13 @@ public class RemoveDuplicatesFromSortedListIi{
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
-/*public class ListNode {
+public class ListNode {
     int val;
     ListNode next;
     ListNode() {}
     ListNode(int val) { this.val = val; }
     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
-}*/
+}
     //输入：head = [1,2,3,3,4,4,5]
 class Solution {
     public ListNode deleteDuplicates(ListNode head) {
