@@ -71,34 +71,18 @@ public class TreeNode {
 class Solution {
     long pre = Long.MIN_VALUE;
     public boolean isValidBST(TreeNode root) {
-        /*if (root == null) {
+        if (root == null) {
             return true;
         }
-        if (root.left == null && root.right == null) {
-            return true;
-        } else if(root.left == null){
-            return root.val<root.right.val&& isValidBST(root.right);
-        } else if (root.right == null) {
-            return root.val>root.left.val&& isValidBST(root.left);
-        } else {
-            return root.val>root.left.val&&root.val<root.right.val&&isValidBST(root.left) && isValidBST(root.right);
-        }*/
-            if (root == null) {
-                return true;
-            }
-            // 访问左子树
-            if (!isValidBST(root.left)) {
-                return false;
-            }
-            // 访问当前节点：如果当前节点小于等于中序遍历的前一个节点，说明不满足BST，返回 false；否则继续遍历。
-            if (root.val <= pre) {
-                return false;
-            }
-            pre = root.val;
-            // 访问右子树
-            return isValidBST(root.right);
+        if (!isValidBST(root.left)) {
+            return false;
         }
-
+        if (root.val <= pre) {
+            return false;
+        }
+        pre = root.val;
+        return isValidBST(root.right);
+    }
 }
 //leetcode submit region end(Prohibit modification and deletion)
 
