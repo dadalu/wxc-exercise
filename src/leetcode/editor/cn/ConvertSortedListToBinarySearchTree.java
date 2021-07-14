@@ -19,7 +19,7 @@ package leetcode.editor.cn;
 // Related Topics 深度优先搜索 链表 
 // 👍 543 👎 0
 
-import com.sun.source.tree.Tree;
+
 
 public class ConvertSortedListToBinarySearchTree{
     public static void main(String[] args) {
