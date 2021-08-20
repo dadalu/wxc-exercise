@@ -51,7 +51,13 @@ class Solution {
                 dp[i] = true;
             }
         }
+        if (dp[nums.length - 1] == true) {
+            return true;
+        }
         for (int i = 0; i < nums.length; i++) {
+            if (dp[nums.length - 1] == true) {
+                return true;
+            }
             if (dp[i] == true) {
                 for (int j = 1; j <= nums[i]; j++) {
                     if (i + j < nums.length) {
@@ -61,7 +67,21 @@ class Solution {
             }
         }
         return dp[nums.length-1];
+        /**
+         * int n = nums.length;
+         *         int rightmost = 0;
+         *         for (int i = 0; i < n; ++i) {
+         *             if (i <= rightmost) {
+         *                 rightmost = Math.max(rightmost, i + nums[i]);
+         *                 if (rightmost >= n - 1) {
+         *                     return true;
+         *                 }
+         *             }
+         *         }
+         *         return false;
+         */
     }
+
 }
 //leetcode submit region end(Prohibit modification and deletion)
 
