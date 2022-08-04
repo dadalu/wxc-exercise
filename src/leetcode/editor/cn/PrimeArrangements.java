@@ -36,12 +36,12 @@ import java.math.BigDecimal;
 public class PrimeArrangements{
     public static void main(String[] args) {
         Solution solution = new PrimeArrangements().new Solution();
-        Integer i = null;
         System.out.println(solution.numPrimeArrangements(100));
     }
 
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
+/*
     public int numPrimeArrangements(int n) {
         int mod = (int) Math.pow(10,9)+7;
         if (n == 0) {
@@ -69,7 +69,34 @@ class Solution {
         }
         return mul.intValue();
     }
+*/
+    public int numPrimeArrangements(int n) {
+        int primeCount =0;
+        for(int i=2;i<= n;i++){
+            if(isPrime(i)){
+                primeCount++;
+            }
+        }
+        return (int)(mul(primeCount)*mul(n-primeCount)%((int)Math.pow(10,9) + 7));
+    }
+    private boolean isPrime(int num){
+        double sqr = Math.sqrt(num);
+        for(int i=2;i<=sqr;i++){
+            if(num%i==0){
+                return false;
+            }
+        }
+        return true;
+    }
 
+    private long mul(int num){
+        long ans =1L;
+        while(num>0){
+            ans=(ans*num)%((int)Math.pow(10,9) + 7);
+            num--;
+        }
+        return ans;
+    }
 }
 //leetcode submit region end(Prohibit modification and deletion)
 
