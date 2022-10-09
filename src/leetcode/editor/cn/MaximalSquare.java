@@ -46,10 +46,10 @@ import java.util.Arrays;
 //Java：最大正方形
 public class MaximalSquare{
     public static void main(String[] args) {
-        Solution solution = new MaximalSquare().new Solution();
-        char[][] arr = {{'1','0','1','0','0'},{'1','0','1','1','1'},{'1','1','1','1','1'},{'1','0','0','1','0'}};
-        // TO TEST
-        System.out.println(solution.maximalSquare(arr));
+        while (true) {
+            int a = 1+1;
+        }
+
     }
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
