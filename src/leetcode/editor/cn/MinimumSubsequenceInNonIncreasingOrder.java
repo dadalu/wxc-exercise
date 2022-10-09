@@ -62,17 +62,9 @@ class Solution {
             total += nums[i];
         }
         List<Integer> list = new ArrayList<>();
-        for (int i = 0; i < nums.length; i++) {
-            for (int j = i+1; j < nums.length; j++) {
-                if (nums[i] < nums[j]) {
-                    int temp = nums[i];
-                    nums[i] = nums[j];
-                    nums[j] = temp;
-                }
-            }
-        }
+        Arrays.sort(nums);
         int sum = 0;
-        for (int i = 0; i < nums.length; i++) {
+        for (int i = nums.length-1; i >-1 ; i--) {
             sum += nums[i];
             list.add(nums[i]);
             if (total - sum < sum) {
