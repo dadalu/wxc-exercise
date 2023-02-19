@@ -39,7 +39,7 @@ public class LongestWellPerformingInterval{
 //leetcode submit region begin(Prohibit modification and deletion)
 // 输入：hours = [9,9,6,0,6,6,9]
 class Solution {
-    public int longestWPI(int[] hours) {
+    /*public int longestWPI(int[] hours) {
         //转换为只包含1，-1的数组 [1,1,-1,-1,-1,1]
         for (int i = 0; i < hours.length; i++) {
             hours[i] = hours[i] > 8 ? 1 : -1;
@@ -67,6 +67,27 @@ class Solution {
                     max = Math.max(j - i, max);
                     break;
                 }
+            }
+        }
+        return max;
+    }*/
+    public int longestWPI(int[] hours) {
+        int max = 0;
+        int[] sum = new int[hours.length + 1];
+        sum[0] = 0;
+
+        Deque<Integer> deque = new ArrayDeque<>();
+        deque.push(0);
+
+        for (int i = 1; i < sum.length; i++) {
+            sum[i] = sum[i-1] + (hours[i-1] > 8 ? 1 : -1);
+            if (sum[deque.peek()] > sum[i]) {
+                deque.push(i);
+            }
+        }
+        for (int i = sum.length-1; i > 0 ; i--) {
+            while (!deque.isEmpty() && sum[deque.peek()] < sum[i]) {
+                max = Math.max(i - deque.pop(), max);
             }
         }
         return max;
