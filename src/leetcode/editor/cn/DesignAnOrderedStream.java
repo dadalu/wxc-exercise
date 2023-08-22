@@ -77,7 +77,7 @@ public class DesignAnOrderedStream{
         List<String> ret = new ArrayList<>();
         strs[idKey - 1] = value;
         if (strs[ptr - 1] == null) {
-            return List.of();
+            return new ArrayList<>();
         } else {
             while (ptr <= strs.length) {
                 if (strs[ptr - 1] != null) {

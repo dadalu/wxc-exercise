@@ -70,7 +70,7 @@ public class TreeNode {
 }
 class Solution {
     public int deepestLeavesSum(TreeNode root) {
-        List<TreeNode> list = List.of(root);
+        List<TreeNode> list = new ArrayList<>();
         return gfs(list);
     }
 
