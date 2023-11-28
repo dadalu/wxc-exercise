@@ -105,15 +105,12 @@ class FrontMiddleBackQueue {
             return -1;
         }
         int mid = sum/2;
-        int z;
         if(sum%2==0){
-            z=linkedList.get(mid-1);
-        }else{
-            z=linkedList.get(mid);
+            mid--;
         }
-        linkedList.remove(linkedList.indexOf(z));
+        int rm = linkedList.remove(mid);
         sum--;
-        return z;
+        return rm;
     }
 
     public int popBack() {
