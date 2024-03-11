@@ -54,17 +54,18 @@ public class TargetSum{
         // TO TEST
     }
     //leetcode submit region begin(Prohibit modification and deletion)
-class Solution {
+    class Solution {
         int count = 0;
         int[] nums;
-    public int findTargetSumWays(int[] nums, int target) {
-        this.nums = nums;
-        findTargetSumWays(target, 0, 0);
-        return count;
-    }
 
-        public void findTargetSumWays(int target, int i,int sum) {
-            if (i == nums.length-1) {
+        public int findTargetSumWays(int[] nums, int target) {
+            this.nums = nums;
+            findTargetSumWays(target, 0, 0);
+            return count;
+        }
+
+        public void findTargetSumWays(int target, int i, int sum) {
+            if (i == nums.length - 1) {
                 if (sum + nums[i] == target) {
                     count++;
                 }
@@ -76,7 +77,7 @@ class Solution {
                 findTargetSumWays(target, i + 1, sum + nums[i]);
             }
         }
-}
+    }
 //leetcode submit region end(Prohibit modification and deletion)
 
 }
