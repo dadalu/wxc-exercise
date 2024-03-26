@@ -28,6 +28,8 @@ package leetcode.editor.cn;
 // Related Topics 数组 双指针 
 // 👍 175 👎 0
 
+import java.util.Arrays;
+
 public class SquaresOfASortedArray{
     public static void main(String[] args) {
         Solution solution = new SquaresOfASortedArray().new Solution();
@@ -40,23 +42,20 @@ public class SquaresOfASortedArray{
 class Solution {
     public int[] sortedSquares(int[] A) {
         int[] ret = new int[A.length];
-        for (int i = 0; i < ret.length; i++) {
-            ret[i]=-1;
-        }
-        for (int i = 0; i < A.length; i++) {
-            int p = A[i]*A[i];
-            for (int j = 0; j <= i; j++) {
-                if (p >= ret[j] && ret[j] != -1) {
-                    continue;
-                } else {
-                    for (int k = i; k >j&&k<A.length; k--) {
-                        ret[k] = ret[k - 1];
-                    }
-                    ret[j] = p;
-                    break;
-                }
-
+        Arrays.fill(ret, -1);
+        int l = 0, r = A.length - 1;
+        int i = A.length - 1;
+        while (l <= r) {
+            int pl = A[l] * A[l];
+            int pr = A[r] * A[r];
+            if (pl >= pr) {
+                ret[i] = pl;
+                l++;
+            } else {
+                ret[i] = pr;
+                r--;
             }
+            i--;
         }
         return ret;
     }
