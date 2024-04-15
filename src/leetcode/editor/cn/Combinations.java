@@ -51,20 +51,22 @@ class Solution {
     int max = 0;
     public List<List<Integer>> combine(int n, int k) {
         max = n;
-        dfs(ret, new ArrayList<>(),1,k);
+        dfs(new ArrayList<>(),1,k);
         return ret;
     }
-    public void dfs(List<List<Integer>> ret,List<Integer> list,Integer n,Integer k) {
+    public void dfs(List<Integer> list,Integer start,Integer k) {
 
         if (k == 0) {
             ret.add(new ArrayList<>(list));
             return;
         }
-        for (int i = n; i <= max; i++) {
+        if (max - start < k-1) {
+            return;
+        }
+        for (int i = start; i <= max; i++) {
             list.add(i);
-            dfs(ret, list,i+1,k-1);
+            dfs(list,i+1,k-1);
             list.remove(list.size()-1);
-            //dfs(ret, list,i+1,k);
         }
     }
 }
