@@ -60,9 +60,7 @@
 // Related Topics 数学 字符串
 
 package leetcode.editor.cn;
-
-import java.math.BigDecimal;
-
+// 人才，这解法也解得出来，看最新版的BaZiFuChuanZhuanHuanChengZhengShuLcof的内容吧
 public class  StringToIntegerAtoi{
     public static void main(String[] args){
         Solution solution = new StringToIntegerAtoi().new Solution();
