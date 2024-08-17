@@ -38,7 +38,6 @@ package leetcode.editor.cn;
 // Related Topics 字符串 
 // 👍 10 👎 0
 
-import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 

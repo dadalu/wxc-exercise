@@ -42,9 +42,7 @@ package leetcode.editor.cn;
 // Related Topics 数组 矩阵 
 // 👍 8 👎 0
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
 public class DetermineWhetherMatrixCanBeObtainedByRotation{
     public static void main(String[] args) {

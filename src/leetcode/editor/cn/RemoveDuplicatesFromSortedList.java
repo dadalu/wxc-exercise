@@ -14,8 +14,6 @@
 
 package leetcode.editor.cn;
 
-import java.util.List;
-
 public class  RemoveDuplicatesFromSortedList{
     public static void main(String[] args){
         Solution solution = new RemoveDuplicatesFromSortedList().new Solution();

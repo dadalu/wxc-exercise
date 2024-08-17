@@ -34,7 +34,6 @@ package leetcode.editor.cn;
 // Related Topics 堆 贪心算法 
 // 👍 147 👎 0
 
-import java.util.Comparator;
 import java.util.PriorityQueue;
 
 public class LastStoneWeight{

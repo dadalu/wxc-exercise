@@ -42,11 +42,6 @@ package leetcode.editor.cn;
 // Related Topics 排序 链表 
 // 👍 811 👎 0
 
-import java.util.Comparator;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.PriorityQueue;
-
 public class SortList{
     public static void main(String[] args) {
         Solution solution = new SortList().new Solution();

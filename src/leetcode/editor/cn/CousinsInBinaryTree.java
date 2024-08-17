@@ -45,9 +45,7 @@ package leetcode.editor.cn;
 // 👍 108 👎 0
 
 import java.util.HashMap;
-import java.util.LinkedList;
 import java.util.Map;
-import java.util.Queue;
 
 public class CousinsInBinaryTree{
     public static void main(String[] args) {

@@ -58,9 +58,6 @@ package leetcode.editor.cn;
 //
 // 👍 200 👎 0
 
-import java.util.HashMap;
-import java.util.Map;
-
 //Java：最深叶节点的最近公共祖先
 public class LowestCommonAncestorOfDeepestLeaves{
     public static void main(String[] args) {

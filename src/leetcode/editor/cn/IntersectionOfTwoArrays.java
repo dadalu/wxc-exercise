@@ -28,9 +28,7 @@ package leetcode.editor.cn;
 // Related Topics 排序 哈希表 双指针 二分查找 
 // 👍 220 👎 0
 
-import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
 //Java：两个数组的交集

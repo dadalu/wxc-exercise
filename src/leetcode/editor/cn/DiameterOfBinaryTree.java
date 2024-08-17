@@ -22,8 +22,6 @@ package leetcode.editor.cn;
 // Related Topics 树 
 // 👍 492 👎 0
 
-import java.util.Map;
-
 public class DiameterOfBinaryTree{
     TreeNode node = new TreeNode(1);
 

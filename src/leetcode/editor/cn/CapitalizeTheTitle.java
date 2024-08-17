@@ -51,8 +51,6 @@ package leetcode.editor.cn;
 //
 // 👍 41 👎 0
 
-import java.util.Arrays;
-
 //Java：将标题首字母大写
 public class CapitalizeTheTitle{
     public static void main(String[] args) {

@@ -35,7 +35,6 @@ package leetcode.editor.cn;
 // Related Topics 设计 哈希表 
 // 👍 67 👎 0
 
-import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 

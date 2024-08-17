@@ -24,7 +24,7 @@ package leetcode.editor.cn;
 public class ReverseVowelsOfAString{
     public static void main(String[] args) {
         Solution solution = new ReverseVowelsOfAString().new Solution();
-        String s = solution.reverseVowels("leetcode");
+        String s = solution.reverseVowels("wxc");
         System.out.println(s);
         // TO TEST
     }

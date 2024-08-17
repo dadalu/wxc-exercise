@@ -39,7 +39,6 @@ package leetcode.editor.cn;
 // 👍 85 👎 0
 
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.Map;
 
 public class BullsAndCows{

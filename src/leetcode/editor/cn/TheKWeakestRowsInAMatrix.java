@@ -64,7 +64,6 @@ package leetcode.editor.cn;
 // Related Topics 数组 二分查找 Matrix 排序 堆（优先队列） 
 // 👍 51 👎 0
 
-import java.util.Comparator;
 import java.util.PriorityQueue;
 
 public class TheKWeakestRowsInAMatrix{

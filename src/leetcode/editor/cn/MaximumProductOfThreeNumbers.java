@@ -25,7 +25,6 @@ package leetcode.editor.cn;
 // Related Topics 数组 数学 
 // 👍 178 👎 0
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class MaximumProductOfThreeNumbers{

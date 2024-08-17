@@ -23,7 +23,6 @@ package leetcode.editor.cn;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Set;
 
 //Java：字符串中的第一个唯一字符
 public class FirstUniqueCharacterInAString{

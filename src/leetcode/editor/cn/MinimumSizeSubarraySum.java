@@ -51,8 +51,6 @@ package leetcode.editor.cn;
 //
 // 👍 1805 👎 0
 
-import java.util.Arrays;
-
 //Java：长度最小的子数组
 public class MinimumSizeSubarraySum {
     public static void main(String[] args) {

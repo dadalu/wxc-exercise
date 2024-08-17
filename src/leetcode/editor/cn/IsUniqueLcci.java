@@ -21,8 +21,6 @@
 
 package leetcode.editor.cn;
 
-import java.util.Calendar;
-
 public class  IsUniqueLcci{
     public static void main(String[] args){
         Solution solution = new IsUniqueLcci().new Solution();

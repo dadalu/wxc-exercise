@@ -26,7 +26,6 @@ package leetcode.editor.cn;
 // Related Topics 堆 贪心算法 排序 字符串 
 // 👍 286 👎 0
 
-import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.PriorityQueue;

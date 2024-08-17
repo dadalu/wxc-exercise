@@ -56,9 +56,6 @@ package leetcode.editor.cn;
 // Related Topics 数组 字符串 
 // 👍 35 👎 0
 
-import java.lang.reflect.Array;
-import java.util.Arrays;
-
 public class ShuffleString{
     public static void main(String[] args) {
         Solution solution = new ShuffleString().new Solution();

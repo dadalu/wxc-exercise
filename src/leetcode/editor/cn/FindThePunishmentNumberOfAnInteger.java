@@ -48,9 +48,6 @@ package leetcode.editor.cn;
 //
 // 👍 55 👎 0
 
-import java.util.ArrayList;
-import java.util.List;
-
 //Java：求一个整数的惩罚数
 public class FindThePunishmentNumberOfAnInteger {
     public static void main(String[] args) {

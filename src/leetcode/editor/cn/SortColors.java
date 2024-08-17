@@ -48,8 +48,6 @@ package leetcode.editor.cn;
 // Related Topics 数组 双指针 排序 
 // 👍 1414 👎 0
 
-import java.util.Arrays;
-
 //Java：颜色分类
 public class SortColors{
     public static void main(String[] args) {

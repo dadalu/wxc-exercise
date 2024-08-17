@@ -19,7 +19,6 @@ package leetcode.editor.cn;
 // 👍 162 👎 0
 
 import java.util.HashSet;
-import java.util.Map;
 import java.util.Set;
 
 public class ShortestDistanceToACharacter{

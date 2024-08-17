@@ -41,8 +41,6 @@ package leetcode.editor.cn;
 // Related Topics 数组 动态规划 矩阵 
 // 👍 1277 👎 0
 
-import java.util.Arrays;
-
 //Java：最大正方形
 public class MaximalSquare{
     public static void main(String[] args) {

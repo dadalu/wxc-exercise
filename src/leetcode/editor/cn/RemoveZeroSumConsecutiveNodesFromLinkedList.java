@@ -40,9 +40,6 @@ package leetcode.editor.cn;
 // Related Topics 链表 
 // 👍 122 👎 0
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class RemoveZeroSumConsecutiveNodesFromLinkedList{
     public static void main(String[] args) {
         Solution solution = new RemoveZeroSumConsecutiveNodesFromLinkedList().new Solution();

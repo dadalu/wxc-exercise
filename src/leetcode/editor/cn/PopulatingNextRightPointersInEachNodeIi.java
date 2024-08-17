@@ -51,9 +51,6 @@ package leetcode.editor.cn;
 // Related Topics 树 深度优先搜索 广度优先搜索 二叉树 
 // 👍 442 👎 0
 
-import java.util.LinkedList;
-import java.util.List;
-
 public class PopulatingNextRightPointersInEachNodeIi{
     public static void main(String[] args) {
         Solution solution = new PopulatingNextRightPointersInEachNodeIi().new Solution();

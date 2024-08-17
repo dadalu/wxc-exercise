@@ -37,9 +37,7 @@ package leetcode.editor.cn;
 // 👍 377 👎 0
 
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Map;
-import java.util.Set;
 
 //Java：两个数组的交集 II
 public class IntersectionOfTwoArraysIi{

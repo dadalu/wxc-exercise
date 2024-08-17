@@ -33,7 +33,6 @@ package leetcode.editor.cn;
 //
 
 import java.util.*;
-import java.util.stream.Collectors;
 
 public class FindAndReplacePattern{
     public static void main(String[] args) {

@@ -31,9 +31,7 @@ package leetcode.editor.cn;
 // Related Topics 栈 贪心算法 字符串 
 // 👍 492 👎 0
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class RemoveDuplicateLetters{

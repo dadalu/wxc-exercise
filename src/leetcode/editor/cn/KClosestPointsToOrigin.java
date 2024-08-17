@@ -38,7 +38,6 @@ package leetcode.editor.cn;
 // Related Topics 堆 排序 分治算法 
 // 👍 221 👎 0
 
-import java.util.Comparator;
 import java.util.PriorityQueue;
 
 public class KClosestPointsToOrigin{

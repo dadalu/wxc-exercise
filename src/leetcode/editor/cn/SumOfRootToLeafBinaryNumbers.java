@@ -49,9 +49,6 @@ package leetcode.editor.cn;
 // Related Topics 树 
 // 👍 85 👎 0
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class SumOfRootToLeafBinaryNumbers{
     public static void main(String[] args) {
         Solution solution = new SumOfRootToLeafBinaryNumbers().new Solution();

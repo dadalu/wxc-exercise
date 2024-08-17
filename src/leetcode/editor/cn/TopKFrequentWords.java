@@ -49,7 +49,7 @@ import java.util.*;
 public class TopKFrequentWords{
     public static void main(String[] args) {
         Solution solution = new TopKFrequentWords().new Solution();
-        String[] arr = {"i", "love", "leetcode", "i", "love", "coding"};
+        String[] arr = {"i", "love", "wxc", "i", "love", "coding"};
         String[] arr1 = {"the", "day", "is", "sunny", "the", "the", "the", "sunny", "is", "is"};
         solution.topKFrequent(arr1, 4);
         

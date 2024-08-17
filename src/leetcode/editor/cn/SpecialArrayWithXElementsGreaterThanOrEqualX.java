@@ -51,8 +51,6 @@ package leetcode.editor.cn;
 // Related Topics 数组 二分查找 排序 
 // 👍 23 👎 0
 
-import java.util.Arrays;
-
 public class SpecialArrayWithXElementsGreaterThanOrEqualX{
     public static void main(String[] args) {
         Solution solution = new SpecialArrayWithXElementsGreaterThanOrEqualX().new Solution();

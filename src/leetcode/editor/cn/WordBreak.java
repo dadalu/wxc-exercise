@@ -34,7 +34,6 @@ package leetcode.editor.cn;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 public class WordBreak{
     public static void main(String[] args) {
@@ -42,7 +41,7 @@ public class WordBreak{
         List<String> list = new ArrayList<>();
         list.add("leet");
         list.add("code");
-        solution.wordBreak("leetcode", list);
+        solution.wordBreak("wxc", list);
     }
 
 //leetcode submit region begin(Prohibit modification and deletion)

@@ -1,9 +1,6 @@
 package leetcode.editor.cn;
 //第K个语法符号
 
-import java.util.ArrayList;
-import java.util.List;
-
 /**
 我们构建了一个包含 n 行( 索引从 1 开始 )的表。首先在第一行我们写上一个 0。接下来的每一行，将前一行中的0替换为01，1替换为10。 
 

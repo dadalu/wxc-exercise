@@ -26,9 +26,7 @@ package leetcode.editor.cn;
 // 👍 149 👎 0
 
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Map;
-import java.util.Set;
 
 //Java：找不同
 public class FindTheDifference{

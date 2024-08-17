@@ -62,9 +62,6 @@ package leetcode.editor.cn;
 // Related Topics 栈 字符串 
 // 👍 22 👎 0
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class MinimumInsertionsToBalanceAParenthesesString{
     public static void main(String[] args) {
         Solution solution = new MinimumInsertionsToBalanceAParenthesesString().new Solution();

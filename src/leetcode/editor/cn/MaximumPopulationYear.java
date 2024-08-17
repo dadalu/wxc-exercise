@@ -35,8 +35,6 @@ package leetcode.editor.cn;
 // Related Topics 数组 计数 
 // 👍 25 👎 0
 
-import java.util.*;
-
 public class MaximumPopulationYear{
     public static void main(String[] args) {
         Solution solution = new MaximumPopulationYear().new Solution();

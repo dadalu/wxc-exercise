@@ -43,9 +43,6 @@ package leetcode.editor.cn;
 //
 // Related Topics 数组 动态规划 👍 118 👎 0
 
-import java.util.HashMap;
-import java.util.Map;
-
 //Java：任意子数组和的绝对值的最大值
 public class MaximumAbsoluteSumOfAnySubarray {
     public static void main(String[] args) {

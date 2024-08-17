@@ -59,7 +59,6 @@ package leetcode.editor.cn;
 // Related Topics 图 
 // 👍 98 👎 0
 
-import javax.naming.PartialResultException;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;

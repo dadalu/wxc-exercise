@@ -49,7 +49,7 @@ import java.util.stream.Collectors;
 public class StringMatchingInAnArray{
     public static void main(String[] args) {
         Solution solution = new StringMatchingInAnArray().new Solution();
-        String[] strs = {"leetcode","et","code"};
+        String[] strs = {"wxc","et","code"};
         solution.stringMatching(strs);
     }
 

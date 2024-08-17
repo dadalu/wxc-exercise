@@ -54,7 +54,6 @@ package leetcode.editor.cn;
 // Related Topics 设计 队列 数组 链表 👍 178 👎 0
 
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
 
 public class DesignCircularDeque{

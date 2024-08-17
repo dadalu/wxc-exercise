@@ -42,7 +42,6 @@ package leetcode.editor.cn;
 // Related Topics 数组 排序 
 // 👍 229 👎 0
 
-import java.util.Arrays;
 import java.util.Comparator;
 import java.util.PriorityQueue;
 

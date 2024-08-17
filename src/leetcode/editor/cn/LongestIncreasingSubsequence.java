@@ -48,7 +48,9 @@ package leetcode.editor.cn;
 // Related Topics 数组 二分查找 动态规划 
 // 👍 1919 👎 0
 
-import java.util.LinkedList;
+import java.util.concurrent.locks.Condition;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
 
 public class LongestIncreasingSubsequence{
     public static void main(String[] args) {
@@ -58,7 +60,7 @@ public class LongestIncreasingSubsequence{
         */
         int[] nums = {10,9,2,5,3,7,101,18};
         //solution.lengthOfLIS(nums);
-        new ThreadDemo().threadLoop(3);
+        new PrintThread2().print();
 
     }
 
@@ -135,7 +137,7 @@ class Solution {
                     }
                 }
 
-            }
+        }
         class PrintThread1 implements Runnable {
             private Integer threadNo;
             private Integer total;
@@ -166,6 +168,96 @@ class Solution {
                         num++;
 
                         lock.notifyAll();
+                    }
+                }
+            }
+        }
+    }
+
+
+    public static class PrintThread{
+        private int global = 0;
+        private Object lock = new Object();
+
+        public void print() {
+            for (int i = 0; i < 3; i++) {
+                new Thread(new MyThread(i)).start();
+            }
+        }
+
+       class MyThread implements Runnable {
+            private int c;
+            public MyThread(int c) {
+                this.c = c;
+            }
+
+            @Override
+            public void run() {
+                while (true) {
+                    synchronized (lock) {
+                        while (global%3 != c) {
+                            try {
+                                lock.wait();
+                            } catch (InterruptedException e) {
+                                throw new RuntimeException(e);
+                            }
+
+                        }
+                        if (global % 3 == 0) {
+                            System.out.println(Thread.currentThread()+"A");
+                        } else if (global % 3 == 1) {
+                            System.out.println(Thread.currentThread()+"B");
+                        }else{
+                            System.out.println(Thread.currentThread()+"C");
+                        }
+                        global++;
+                        lock.notifyAll();
+                    }
+                }
+            }
+        }
+    }
+
+    public static class PrintThread2{
+        private int global = 0;
+        private Lock lock = new ReentrantLock();
+        Condition conditionA = lock.newCondition();
+        Condition conditionB = lock.newCondition();
+        Condition conditionC = lock.newCondition();
+
+        public void print() {
+            new Thread(new MyThread("A",0,conditionA,conditionB)).start();
+            new Thread(new MyThread("B",1,conditionB,conditionC)).start();
+            new Thread(new MyThread("C",2,conditionC,conditionA)).start();
+        }
+
+        class MyThread implements Runnable {
+            private String s;
+            private int n;
+            private Condition cur;
+            Condition next;
+            public MyThread(String s,int n,Condition cur,Condition next) {
+                this.n = n;
+                this.s = s;
+                this.cur = cur;
+                this.next = next;
+            }
+
+            @Override
+            public void run() {
+                while (true) {
+                    lock.lock();
+                    try {
+                        while (global % 3 != n) {
+                            cur.await();
+                        }
+                        System.out.println(Thread.currentThread() + s);
+                        global++;
+                        next.signal();
+                    } catch (InterruptedException e) {
+                        System.out.println(e);
+                    }finally {
+                        lock.unlock();
                     }
                 }
             }

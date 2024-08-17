@@ -42,9 +42,6 @@ package leetcode.editor.cn;
 // Related Topics 字符串 排序 
 // 👍 2 👎 0
 
-import java.util.Arrays;
-import java.util.StringJoiner;
-
 public class SortingTheSentence{
     public static void main(String[] args) {
         Solution solution = new SortingTheSentence().new Solution();

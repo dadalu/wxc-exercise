@@ -43,8 +43,6 @@ package leetcode.editor.cn;
 // Related Topics 数组 枚举 
 // 👍 25 👎 0
 
-import java.util.Arrays;
-
 public class CountGoodTriplets{
     public static void main(String[] args) {
         Solution solution = new CountGoodTriplets().new Solution();

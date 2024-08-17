@@ -34,8 +34,6 @@ package leetcode.editor.cn;
 // Related Topics 数组 
 // 👍 71 👎 0
 
-import java.util.Arrays;
-
 public class LargestNumberAtLeastTwiceOfOthers{
     public static void main(String[] args) {
         Solution solution = new LargestNumberAtLeastTwiceOfOthers().new Solution();

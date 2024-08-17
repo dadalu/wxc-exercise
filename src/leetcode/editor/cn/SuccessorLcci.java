@@ -30,9 +30,6 @@ package leetcode.editor.cn;
 // Related Topics 树 深度优先搜索 二叉搜索树 二叉树 
 // 👍 69 👎 0
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class SuccessorLcci{
     public static void main(String[] args) {
         Solution solution = new SuccessorLcci().new Solution();

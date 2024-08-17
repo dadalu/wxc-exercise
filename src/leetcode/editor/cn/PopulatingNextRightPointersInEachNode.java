@@ -46,11 +46,6 @@ package leetcode.editor.cn;
 // 
 // Related Topics 树 深度优先搜索 广度优先搜索 二叉树 👍 535 👎 0
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
 public class PopulatingNextRightPointersInEachNode{
     public static void main(String[] args) {
         Solution solution = new PopulatingNextRightPointersInEachNode().new Solution();

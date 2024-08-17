@@ -50,7 +50,6 @@ package leetcode.editor.cn;
 // 👍 1540 👎 0
 
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 //Java：实现 Trie (前缀树)

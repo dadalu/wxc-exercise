@@ -46,9 +46,7 @@ package leetcode.editor.cn;
 // 👍 14 👎 0
 
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Map;
-import java.util.Set;
 
 public class CheckIfOneStringSwapCanMakeStringsEqual{
     public static void main(String[] args) {

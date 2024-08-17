@@ -40,8 +40,6 @@ package leetcode.editor.cn;
 // Related Topics 贪心算法 
 // 👍 65 👎 0
 
-import java.util.Arrays;
-
 public class MaximizeSumOfArrayAfterKNegations{
     public static void main(String[] args) {
         Solution solution = new MaximizeSumOfArrayAfterKNegations().new Solution();

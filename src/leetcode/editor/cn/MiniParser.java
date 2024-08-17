@@ -36,9 +36,6 @@ package leetcode.editor.cn;
 // Related Topics 栈 字符串 
 // 👍 59 👎 0
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class MiniParser{
     public static void main(String[] args) {
         Solution solution = new MiniParser().new Solution();

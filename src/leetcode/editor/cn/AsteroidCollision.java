@@ -51,7 +51,6 @@ package leetcode.editor.cn;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
 public class AsteroidCollision{
     public static void main(String[] args) {
