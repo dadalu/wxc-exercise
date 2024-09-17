@@ -9,6 +9,7 @@ public class FieldAccess {
     private static final long COUNTER_OFFSET;
 
     static {
+
         try {
             UNSAFE = getUnsafeInstance();
             COUNTER_OFFSET = UNSAFE.objectFieldOffset
